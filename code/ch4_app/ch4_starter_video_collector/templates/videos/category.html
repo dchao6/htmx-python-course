@@ -40,6 +40,20 @@
         {% endfor %}
     </div>
 
+    <div class="container add-video category">
+        <div class="row click-to-add">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+
+                <a hx-get="/videos/add/{{ category.category }}"
+                   hx-swap="outerHTML swap:.25s"
+                   class="fade-me-out"
+                ><i class="fas fa-plus-circle">add a video</i></a>
+
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+    </div>
 
 {% endblock %}
 
